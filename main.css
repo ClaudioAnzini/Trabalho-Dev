@@ -71,9 +71,6 @@ a:hover{
     border: none;
     object-fit: cover;
 }
-#restaurante-div{
-    border: none !important;
-}
 
 .white-section{
     flex-direction: column;
