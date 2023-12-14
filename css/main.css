@@ -6,7 +6,6 @@ html {
     padding: 0;
     margin: 0;
     background-color: black;
-    height: 2000px;
 }
 
 * {
@@ -24,6 +23,8 @@ h1 {
     width: calc(100% - 80px);
     padding: 0 40px;
     display: flex;
+    top:0;
+    z-index: 9999;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -71,6 +72,7 @@ img {
     left: -100%;
     display: block;
     position: fixed;
+    color: white;
     background-color: black;
     z-index: 9998;
     padding: 18px 68px 24px 46px;
@@ -122,19 +124,25 @@ img {
 .botao {
     margin-top: 40px;
     display: inline-flex;
+    cursor: pointer;
+    text-decoration: none;
     font-family: sans-serif;
     font-weight: 700;
     font-size: var(--font-16);
     line-height: 1em;
     color: #f1ecc9;
     text-transform: uppercase;
-    background-image: url('midia/backgrounds/background-botoes.png');
+    background-image: url('../midia/backgrounds/background-botoes.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     background-color: rgba(0, 0, 0, 0);
     padding: 1.5em 1.5625em 1em;
     transition: color .3s;
+    transition: all 250ms ease;
+}
+.botao:hover{
+    scale: 1.2;
 }
 
 .titulo-pequeno {
@@ -347,8 +355,30 @@ img {
     padding: 2.22rem 2.22rem 1.11rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: center;
     z-index: 3;
-
+    width: 330px;
+    height: 400px;
+    background-size: cover;
+}
+.titulo-item{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.1em;
+    text-align: left;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
+.tabela-pizzas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 830px;
+    justify-content: center;
+    margin: auto;
+}
+.active{
+    color: #ea2230;
 }
