@@ -402,3 +402,23 @@ img {
     color: white;
     padding: 1rem;
 }
+.texto-h{
+    font-size: 60px;
+}
+.texto-p{
+    font-size: 40px;
+}
+#header-nav ul li a{
+    font-size: 45px;
+}
+@media screen and (max-width: 800px) {
+    .texto-h{
+        font-size: 40px;
+    }
+    .texto-p{
+        font-size: 20px;
+    }
+    #header-nav ul li a{
+        font-size: 30px;
+    }
+}
