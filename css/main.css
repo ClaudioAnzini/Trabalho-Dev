@@ -389,7 +389,7 @@ img {
 }
 #container-referencias{
     margin: 0;
-    padding: 300px;
+    padding-top: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
