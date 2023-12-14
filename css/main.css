@@ -382,3 +382,18 @@ img {
 .active{
     color: #ea2230;
 }
+#container-referencias{
+    margin: 0;
+    padding: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+#container-referencias a{
+    text-decoration: none;
+    list-style:none;
+    color: white;
+    padding: 1rem;
+}
